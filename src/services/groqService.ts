@@ -3,9 +3,9 @@ import Groq from "groq-sdk";
 // --- API KEY CONFIGURATION ---
 // Paste your Groq API Key inside the quotes below:
 // আপনার Groq API Key নিচের কোটেশনের (" ") ভেতরে বসান:
-const GROQ_API_KEY = "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"; 
+const GROQ_API_KEY = "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"; 
 
-let currentApiKey = (GROQ_API_KEY !== "YOUR_GROQ_API_KEY_HERE" ? GROQ_API_KEY : "") || (import.meta as any).env?.VITE_GROQ_API_KEY || "";
+let currentApiKey = (GROQ_API_KEY !== "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" ? GROQ_API_KEY : "") || (import.meta as any).env?.VITE_GROQ_API_KEY || "";
 
 export function updateServiceApiKey(newKey: string) {
   currentApiKey = newKey;
